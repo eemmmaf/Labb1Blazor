@@ -8,11 +8,13 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <None Remove="Shared\Date.razor.css" />
+    <None Remove="Shared\Info.razor.css" />
+    <None Remove="Shared\MobileNav.razor.css" />
   </ItemGroup>
 
   <ItemGroup>
-    <Content Include="Shared\Date.razor.css" />
+    <Content Include="Shared\Info.razor.css" />
+    <Content Include="Shared\MobileNav.razor.css" />
   </ItemGroup>
 
   <ItemGroup>

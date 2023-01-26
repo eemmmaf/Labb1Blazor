@@ -1,0 +1,15 @@
+﻿li {
+    margin: 1rem;
+    display: inline-block;
+}
+
+ul {
+    width: 90vw;
+    max-width: 100%;
+    background-color: #DDD4CF;
+}
+
+nav {
+    text-align: center;
+    margin-bottom: 2rem;
+}

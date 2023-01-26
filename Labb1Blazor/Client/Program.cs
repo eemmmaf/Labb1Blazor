@@ -1,6 +1,7 @@
 using Labb1Blazor;
 using Microsoft.AspNetCore.Components.Web;
 using Microsoft.AspNetCore.Components.WebAssembly.Hosting;
+using System.Globalization;
 
 namespace Labb1Blazor
 {
@@ -15,6 +16,7 @@ namespace Labb1Blazor
             builder.Services.AddScoped(sp => new HttpClient { BaseAddress = new Uri(builder.HostEnvironment.BaseAddress) });
 
             await builder.Build().RunAsync();
+
         }
     }
 }

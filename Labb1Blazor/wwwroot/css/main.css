@@ -10,9 +10,6 @@ html {
     background-color: #c2b2a9;
 }
 
-@media (min-width: 768px) {
-}
-
 h1 {
     font-size: 2.8rem;
     color: #2b2725;
@@ -147,6 +144,7 @@ footer {
     margin: auto;
     max-width: 95vw;
     width: 100%;
+    background-color: #DDD4CF;
 }
 
 nav ul {
@@ -155,7 +153,6 @@ nav ul {
 }
 
 nav li {
-    text-align: center;
     margin-top: 2rem;
     border-bottom: 1px solid groove;
 }
@@ -197,5 +194,49 @@ th{
 
 td{
     font-size: 1.6rem;
+}
+
+.mobile-nav{
+    display: none;
+}
+
+.scroll{
+    overflow-x: auto;
+}
+
+@media all and (max-width: 1050px) {
+    .flex-nav {
+        display: none;
+    }
+
+    .main{
+        max-width: 95vw;
+        width: 100%;
+    }
+
+    .mobile-nav{
+        display: block;
+    }
+}
+
+@media all and (max-width: 800px){
+
+    .flexform {
+        flex-direction: column;
+    }
+
+    form{
+        margin: auto;
+        display: block;
+    }
+
+    .flexform h2{
+        text-align: center;
+    }
+
+    input[type="number"]{
+        max-width:300px;
+        width: 100%;
+    }
 }
 
