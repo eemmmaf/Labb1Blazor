@@ -1,0 +1,62 @@
+﻿@page "/json"
+@inject HttpClient Http
+
+<h1>Json</h1>
+
+
+@if (courses == null)
+{
+    <p>Läser in kurser...</p>
+}
+else
+{
+    <h2 class="table-h2">Kurser jag läst</h2>
+    <table>
+        <thead>
+            <tr>
+                <th>Kurskod</th>
+                <th>Kursnamn</th>
+                <th>Progression</th>
+                <th>Kursplan</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach(var course in courses)
+            {
+                <tr>
+                    <td>@course.code</td>
+                    <td>@course.name</td>
+                    <td>@course.progression</td>
+                    <td>@course.syllabus</td>
+                </tr>
+            }
+        </tbody>
+    </table>
+}
+
+
+@code {
+
+    //Läser in
+    private Courses[]? courses;
+
+    protected override async Task OnInitializedAsync()
+    {
+        courses = await Http.GetFromJsonAsync<Courses[]>("courses.json");
+    }
+
+    //Skapar modell
+    public class Courses
+    {
+        public string? code { get; set; }
+
+        public string? syllabus { get; set; }
+
+        public string? name { get; set; }
+
+        public string? progression { get; set; }
+    }
+
+
+}
+
