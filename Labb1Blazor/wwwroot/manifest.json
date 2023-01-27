@@ -1,6 +1,6 @@
 {
-  "name": "Labb1Blazor",
-  "short_name": "Labb1Blazor",
+  "name": "Emmas first app",
+  "short_name": "First app",
   "start_url": "./",
   "display": "standalone",
   "background_color": "#ffffff",

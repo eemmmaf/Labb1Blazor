@@ -12,28 +12,29 @@ else
 {
     <h2 class="table-h2">Kurser jag läst</h2>
     <div class="scroll">
-    <table>
-        <thead>
-            <tr>
-                <th>Kurskod</th>
-                <th>Kursnamn</th>
-                <th>Progression</th>
-                <th>Kursplan</th>
-            </tr>
-        </thead>
-        <tbody>
-            @foreach(var course in courses)
-            {
+        <!--Tabell-->
+        <table>
+            <thead>
                 <tr>
-                    <td>@course.code</td>
-                    <td>@course.name</td>
-                    <td>@course.progression</td>
-                    <td>@course.syllabus</td>
+                    <th>Kurskod</th>
+                    <th>Kursnamn</th>
+                    <th>Progression</th>
+                    <th>Kursplan</th>
                 </tr>
-            }
-        </tbody>
-    </table>
-        </div>
+            </thead>
+            <tbody>
+                @foreach (var course in courses)
+                {
+                    <tr>
+                        <td>@course.code</td>
+                        <td>@course.name</td>
+                        <td>@course.progression</td>
+                        <td><a href="@course.syllabus">@course.syllabus</a></td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+    </div>
 }
 
 

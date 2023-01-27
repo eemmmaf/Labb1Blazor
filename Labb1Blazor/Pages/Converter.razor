@@ -3,26 +3,33 @@
 <h1>Konvertering</h1>
 
 
+<!--Flexcontainer-->
 <div class="flexform">
     <div>
-<h2>Meter till fot</h2>
-<form class="calculate">
-    <label for="meter">Meter:</label>
-    <input type="number" name="meter" id="meter" @bind="meters" />
-    <input type="button" @onclick="CalculateFeet" value="Beräkna">
-    <p><b>Resultat</b>: @meters meter = @feet fot</p>
-</form>
+
+        <!--Meter till fot-->
+        <h2>Meter till fot</h2>
+        <!--Formulär meter till fot-->
+        <form class="calculate">
+            <label for="meter">Meter:</label>
+            <input type="number" name="meter" id="meter" @bind="meters" />
+            <input type="button" @onclick="CalculateFeet" value="Beräkna">
+            <p><b>Resultat</b>: @meters meter = @feet fot</p>
+        </form>
     </div>
+
+    <!-- Km/h till mile/hour-->
     <div>
-<h2>
-    Km/h till mile/hour
-</h2>
-<form class="calculate">
-    <label for="km">Km/h</label>
-    <input type="number" name="km" id="km" @bind="kilometers" />
-    <input type="button" @onclick="CalculateMiles" value="Beräkna">
-    <p><b>Resultat</b>: @kilometers km/h = @miles mile/hour</p>
-</form>
+        <h2>
+            Km/h till mile/hour
+        </h2>
+        <!--Formulär km/h till mile/hour-->
+        <form class="calculate">
+            <label for="km">Km/h</label>
+            <input type="number" name="km" id="km" @bind="kilometers" />
+            <input type="button" @onclick="CalculateMiles" value="Beräkna">
+            <p><b>Resultat</b>: @kilometers km/h = @miles mile/hour</p>
+        </form>
     </div>
 </div>
 

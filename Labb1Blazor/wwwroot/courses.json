@@ -1,20 +1,26 @@
 [
   {
-    "code": "test",
-    "name": "test",
-    "progression": "test",
-    "syllabus": "test"
+    "code": "DT084G",
+    "name": "Introduktion till programmering i JavaScript",
+    "progression": "A",
+    "syllabus": "https://www.miun.se/utbildning/kursplaner-och-utbildningsplaner/Sok-kursplan/kursplan/?kursplanid=31961"
   },
   {
-    "code": "test",
-    "name": "test",
-    "progression": "test",
-    "syllabus": "test"
+    "code": "DT057G",
+    "name": "Webbutveckling I",
+    "progression": "A",
+    "syllabus": "https://www.miun.se/utbildning/kursplaner-och-utbildningsplaner/Sok-kursplan/kursplan/?kursplanid=32498"
   },
   {
-    "code": "test",
-    "name": "test",
-    "progression": "test",
-    "syllabus": "test"
+    "code": "DT163G",
+    "name": "Digital bildbehandling för webb",
+    "progression": "A",
+    "syllabus": "https://www.miun.se/utbildning/kursplaner-och-utbildningsplaner/Sok-kursplan/kursplan/?kursplanid=24403"
+  },
+  {
+    "code": "DT093G",
+    "name": "Webbutveckling II",
+    "progression": "B",
+    "syllabus": "https://www.miun.se/utbildning/kursplaner-och-utbildningsplaner/Sok-kursplan/kursplan/?kursplanid=32284"
   }
 ]
